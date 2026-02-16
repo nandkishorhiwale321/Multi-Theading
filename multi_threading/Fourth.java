@@ -3,7 +3,7 @@ package multi_threading;
 public class Fourth {
 	public static void main (String [] args) throws InterruptedException {
 		
-		Animal an=new Animal(10);
+		Animal an=new Animal();
 		
 		Thread t1 =new Thread (an);
 		t1.start();
@@ -20,7 +20,7 @@ public class Fourth {
 }
 class Animal implements Runnable {
 	
-	public Animal (int a) {
+	public Animal () {
 		
 	}
 
